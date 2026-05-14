@@ -1,0 +1,33 @@
+name: testlab1
+
+topology:
+  nodes:
+    r1:
+      kind: xrd
+      image: ios-xr/xrd-control-plane:25.4.1
+
+    r2:
+      kind: xrd
+      image: ios-xr/xrd-control-plane:25.4.1
+
+    r3:
+      kind: xrd
+      image: ios-xr/xrd-control-plane:25.4.1
+
+    r4:
+      kind: xrd
+      image: ios-xr/xrd-control-plane:25.4.1
+
+  links:
+    # R1 <-> R2
+    - endpoints: ["r1:Gi0-0-0-0", "r2:Gi0-0-0-0"]
+
+    # R1 <-> R3
+    - endpoints: ["r1:Gi0-0-0-1", "r3:Gi0-0-0-0"]
+
+    # R2 <-> R4
+    - endpoints: ["r2:Gi0-0-0-1", "r4:Gi0-0-0-0"]
+
+    # R3 <-> R4
+    - endpoints: ["r3:Gi0-0-0-1", "r4:Gi0-0-0-1"]
+    
