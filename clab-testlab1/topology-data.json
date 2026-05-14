@@ -1,0 +1,211 @@
+{
+  "name": "testlab1",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-f31be2c56d30",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": [],
+  "nodes": {
+    "r1": {
+      "index": "0",
+      "shortname": "r1",
+      "longname": "clab-testlab1-r1",
+      "fqdn": "r1.testlab1.io",
+      "group": "",
+      "labdir": "/home/tambea/testlab/clab-testlab1/r1",
+      "kind": "xrd",
+      "image": "ios-xr/xrd-control-plane:25.4.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f31be2c56d30",
+        "clab-node-group": "",
+        "clab-node-kind": "xrd",
+        "clab-node-lab-dir": "/home/tambea/testlab/clab-testlab1/r1",
+        "clab-node-longname": "clab-testlab1-r1",
+        "clab-node-name": "r1",
+        "clab-node-type": "",
+        "clab-owner": "tambea",
+        "clab-topo-file": "/home/tambea/testlab/lab5r.yaml",
+        "containerlab": "testlab1"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r2": {
+      "index": "1",
+      "shortname": "r2",
+      "longname": "clab-testlab1-r2",
+      "fqdn": "r2.testlab1.io",
+      "group": "",
+      "labdir": "/home/tambea/testlab/clab-testlab1/r2",
+      "kind": "xrd",
+      "image": "ios-xr/xrd-control-plane:25.4.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f31be2c56d30",
+        "clab-node-group": "",
+        "clab-node-kind": "xrd",
+        "clab-node-lab-dir": "/home/tambea/testlab/clab-testlab1/r2",
+        "clab-node-longname": "clab-testlab1-r2",
+        "clab-node-name": "r2",
+        "clab-node-type": "",
+        "clab-owner": "tambea",
+        "clab-topo-file": "/home/tambea/testlab/lab5r.yaml",
+        "containerlab": "testlab1"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r3": {
+      "index": "2",
+      "shortname": "r3",
+      "longname": "clab-testlab1-r3",
+      "fqdn": "r3.testlab1.io",
+      "group": "",
+      "labdir": "/home/tambea/testlab/clab-testlab1/r3",
+      "kind": "xrd",
+      "image": "ios-xr/xrd-control-plane:25.4.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f31be2c56d30",
+        "clab-node-group": "",
+        "clab-node-kind": "xrd",
+        "clab-node-lab-dir": "/home/tambea/testlab/clab-testlab1/r3",
+        "clab-node-longname": "clab-testlab1-r3",
+        "clab-node-name": "r3",
+        "clab-node-type": "",
+        "clab-owner": "tambea",
+        "clab-topo-file": "/home/tambea/testlab/lab5r.yaml",
+        "containerlab": "testlab1"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r4": {
+      "index": "3",
+      "shortname": "r4",
+      "longname": "clab-testlab1-r4",
+      "fqdn": "r4.testlab1.io",
+      "group": "",
+      "labdir": "/home/tambea/testlab/clab-testlab1/r4",
+      "kind": "xrd",
+      "image": "ios-xr/xrd-control-plane:25.4.1",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f31be2c56d30",
+        "clab-node-group": "",
+        "clab-node-kind": "xrd",
+        "clab-node-lab-dir": "/home/tambea/testlab/clab-testlab1/r4",
+        "clab-node-longname": "clab-testlab1-r4",
+        "clab-node-name": "r4",
+        "clab-node-type": "",
+        "clab-owner": "tambea",
+        "clab-topo-file": "/home/tambea/testlab/lab5r.yaml",
+        "containerlab": "testlab1"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:fa:33:3e",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:9a:e2:bd",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r1",
+          "interface": "Gi0-0-0-1",
+          "mac": "aa:c1:ab:da:e2:f2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r3",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:85:2b:92",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "Gi0-0-0-1",
+          "mac": "aa:c1:ab:29:eb:03",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "Gi0-0-0-0",
+          "mac": "aa:c1:ab:68:94:4f",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r3",
+          "interface": "Gi0-0-0-1",
+          "mac": "aa:c1:ab:c7:90:4d",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r4",
+          "interface": "Gi0-0-0-1",
+          "mac": "aa:c1:ab:d6:68:1f",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
